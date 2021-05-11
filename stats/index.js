@@ -35,7 +35,7 @@ fetch(`https://api.hypixel.net/player?key=${apiToken}&name=${username}`)
         var bwDeaths = data["player"]["stats"]["Bedwars"]["deaths_bedwars"]
         var bwKDR = bedwarsKills/bwDeaths; //BW KDR
         var bwkdrfixed = bwKDR.toFixed(2);
-        var bwLevel = data["player"]["achievements"]["bedwars_level"] //skywars_you_re_a_star
+        var bwLevel = data["player"]["achievements"]["bedwars_level"] 
         var swLevel = data["player"]["achievements"]["skywars_you_re_a_star"]
         var mainVers = data["player"]["mcVersionRp"]
         var swLosses = data["player"]["stats"]["SkyWars"]["losses"]
