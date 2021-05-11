@@ -19,7 +19,7 @@ fetch(`https://api.hypixel.net/player?key=${apiToken}&name=${username}`)
     .then(data => { //
         let stat2 = data["player"]["lastLogin"] //works same as python in this
         let stat1 = data["player"]["lastLogout"]
-        let pastUsernames = data["player"]["knownAliases"] //defien this /99999999999999999999999999999999999999999999999999
+        let pastUsernames = data["player"]["knownAliases"]
         var bedwarsCoins = data["player"]["stats"]["Bedwars"]["coins"]
         var skywarsCoins = data["player"]["stats"]["SkyWars"]["coins"]
         var PName = data["player"]["displayname"]
